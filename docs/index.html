@@ -4,6 +4,7 @@
       <audio id="russian_song" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/russian_song.mp3"></audio>
       <audio id="bruh_sound_effect" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/bruh_sound_effect.mp3"></audio>
       <audio id="sad_violin" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/sad_violin.mp3"></audio>
+      <audio id="still_dre" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/still_dre.mp3"></audio>
       <script>
         function stopAll() {
             var audio = document.getElementById("russian_song");
@@ -15,6 +16,10 @@
             var audio = document.getElementById("sad_violin");
             audio.currentTime = 0;
             document.getElementById("sad_violin").pause();
+            var audio = document.getElementById("still_dre");
+            audio.currentTime = 0;
+            document.getElementById("still_dre").pause();
+
         }
         function play_russian_music(){
             stopAll();
@@ -33,6 +38,12 @@
           var audio = document.getElementById("sad_violin");
           audio.currentTime = 0;
           document.getElementById("sad_violin").play();
+        }
+        function play_still_dre(){
+            stopAll();
+          var audio = document.getElementById("still_dre");
+          audio.currentTime = 0;
+          document.getElementById("still_dre").play();
         }
       </script>
       <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -88,7 +99,7 @@
         </script>
     </head>
     <header>
-        <title>Memes Website</title>
+        <title>Memes Soundboard</title>
         <style>
             body {
                 background-image: url("https://github.com/sebtheman/memes-website/raw/master/docs/images/pepe.jpeg");
@@ -127,6 +138,7 @@
         <button id="meme_button" onclick="play_russian_music();">Russian Music</button>
         <button id="meme_button" onclick="play_bruh_sound_effect();">Bruh</button>
         <button id="meme_button" onclick="play_sad_violin();">Sad violin</button>
+        <button id="meme_button" onclick="play_still_dre();">Still Dre</button>
         <script>
             includeHTML();
         </script>
