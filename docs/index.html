@@ -2,11 +2,17 @@
 <html>
     <head>
       <audio id="russian_song" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/russian_song.mp3"></audio>
+      <audio id="bruh_sound_effect" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/bruh_sound_effect.mp3"></audio>
       <script>
-        async function play_russian_music(){
+        function play_russian_music(){
           var audio = document.getElementById("russian_song");
           audio.currentTime = 0;
           document.getElementById("russian_song").play();
+        }
+        function play_bruh_sound_effect(){
+          var audio = document.getElementById("bruh_sound_effect");
+          audio.currentTime = 0;
+          document.getElementById("bruh_sound_effect").play();
         }
       </script>
       <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -97,6 +103,7 @@
           <center><i>Welcome to the Memes Website!</i></center>
         </div>
         <button id="meme_button" onclick="play_russian_music();">Russian Music</button>
+        <button id="meme_button" onclick="play_bruh_sound_effect();">Bruh</button>
         <script>
             includeHTML();
         </script>
