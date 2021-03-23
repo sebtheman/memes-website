@@ -17,6 +17,7 @@
       <audio id="just_do_it" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/just_do_it.mp3"></audio>
       <audio id="old_man_funny_laugh" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/old_man_funny_laugh.mp3"></audio>
       <audio id="tv_bleep" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/tv_bleep.mp3"></audio>
+      <audio id="damn" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/damn.mp3"></audio>
       <script>
         function stopAll() {
             var audio = document.getElementById("russian_song");
@@ -67,6 +68,9 @@
             var audio = document.getElementById("tv_bleep");
             audio.currentTime = 0;
             document.getElementById("tv_bleep").pause();
+            var audio = document.getElementById("damn");
+            audio.currentTime = 0;
+            document.getElementById("damn").pause();
 
         }
         function play_russian_music(){
@@ -164,6 +168,12 @@
           var audio = document.getElementById("tv_bleep");
           audio.currentTime = 0;
           document.getElementById("tv_bleep").play();
+        }
+        function play_damn_effect(){
+          stopAll();
+          var audio = document.getElementById("damn");
+          audio.currentTime = 0;
+          document.getElementById("damn").play();
         }
       </script>
       <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -275,6 +285,7 @@
         <button id="meme_button" onclick="play_just_do_it_effect();">Just Do It</button>
         <button id="meme_button" onclick="play_old_man_funny_laugh_effect();">Old Man Laugh</button>
         <button id="meme_button" onclick="play_tv_bleep_effect();">TV Bleep</button>
+        <button id="meme_button" onclick="play_damn_effect();">Damn</button>
         <script>
             includeHTML();
         </script>
