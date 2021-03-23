@@ -16,6 +16,7 @@
       <audio id="wait_a_minute" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/wait_a_minute.mp3"></audio>
       <audio id="just_do_it" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/just_do_it.mp3"></audio>
       <audio id="old_man_funny_laugh" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/old_man_funny_laugh.mp3"></audio>
+      <audio id="tv_bleep" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/tv_bleep.mp3"></audio>
       <script>
         function stopAll() {
             var audio = document.getElementById("russian_song");
@@ -63,6 +64,9 @@
             var audio = document.getElementById("old_man_funny_laugh");
             audio.currentTime = 0;
             document.getElementById("old_man_funny_laugh").pause();
+            var audio = document.getElementById("tv_bleep");
+            audio.currentTime = 0;
+            document.getElementById("tv_bleep").pause();
 
         }
         function play_russian_music(){
@@ -154,6 +158,12 @@
           var audio = document.getElementById("old_man_funny_laugh");
           audio.currentTime = 0;
           document.getElementById("old_man_funny_laugh").play();
+        }
+        function play_tv_bleep_effect(){
+          stopAll();
+          var audio = document.getElementById("tv_bleep");
+          audio.currentTime = 0;
+          document.getElementById("tv_bleep").play();
         }
       </script>
       <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -264,6 +274,7 @@
         <button id="meme_button" onclick="play_wait_a_minute_sound_effect();">Wait a minute</button>
         <button id="meme_button" onclick="play_just_do_it_effect();">Just Do It</button>
         <button id="meme_button" onclick="play_old_man_funny_laugh_effect();">Old Man Laugh</button>
+        <button id="meme_button" onclick="play_tv_bleep_effect();">TV Bleep</button>
         <script>
             includeHTML();
         </script>
