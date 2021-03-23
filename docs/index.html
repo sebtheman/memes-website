@@ -15,6 +15,7 @@
       <audio id="wat" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/wat.mp3"></audio>
       <audio id="wait_a_minute" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/wait_a_minute.mp3"></audio>
       <audio id="just_do_it" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/just_do_it.mp3"></audio>
+      <audio id="old_man_funny_laugh" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/old_man_funny_laugh.mp3"></audio>
       <script>
         function stopAll() {
             var audio = document.getElementById("russian_song");
@@ -59,6 +60,9 @@
             var audio = document.getElementById("just_do_it");
             audio.currentTime = 0;
             document.getElementById("just_do_it").pause();
+            var audio = document.getElementById("old_man_funny_laugh");
+            audio.currentTime = 0;
+            document.getElementById("old_man_funny_laugh").pause();
 
         }
         function play_russian_music(){
@@ -144,6 +148,12 @@
           var audio = document.getElementById("just_do_it");
           audio.currentTime = 0;
           document.getElementById("just_do_it").play();
+        }
+        function play_old_man_funny_laugh_effect(){
+          stopAll();
+          var audio = document.getElementById("old_man_funny_laugh");
+          audio.currentTime = 0;
+          document.getElementById("old_man_funny_laugh").play();
         }
       </script>
       <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -252,7 +262,9 @@
         <button id="meme_button" onclick="play_oh_my_god_wow_sound_effect();">Oh My God Wow</button>
         <button id="meme_button" onclick="play_wat_sound_effect();">Wat</button>
         <button id="meme_button" onclick="play_wait_a_minute_sound_effect();">Wait a minute</button>
-        <button id="meme_button" onclick="play_just_do_it_sound_effect();">Just Do It</button>
+        <button id="meme_button" onclick="play_just_do_it_effect();">Just Do It</button>
+        <button id="meme_button" onclick="play_old_man_funny_laugh_effect();">Old Man Laugh</button>
+        <script>
         <script>
             includeHTML();
         </script>
