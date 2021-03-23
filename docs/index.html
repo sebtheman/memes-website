@@ -7,7 +7,7 @@
       <audio id="still_dre" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/still_dre.mp3"></audio>
       <audio id="wow_sound_effect" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/wow_sound_effect.mp3"></audio>
       <audio id="nani_effect" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/nani.mp3"></audio>
-      <audio id="?!?!_effect" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/?!?!_effect.mp3"></audio>
+      <audio id="surprised_effect" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/surprised_effect.mp3"></audio>
       <script>
         function stopAll() {
             var audio = document.getElementById("russian_song");
@@ -28,9 +28,9 @@
             var audio = document.getElementById("nani_effect");
             audio.currentTime = 0;
             document.getElementById("nani_effect").pause();
-            var audio = document.getElementById("?!?!_effect");
+            var audio = document.getElementById("surprised_effect");
             audio.currentTime = 0;
-            document.getElementById("?!?!_effect").pause();
+            document.getElementById("surprised_effect").pause();
 
         }
         function play_russian_music(){
@@ -71,9 +71,9 @@
         }
         function play_surprised_effect(){
             stopAll();
-          var audio = document.getElementById("?!?!_effect");
+          var audio = document.getElementById("surprised_effect");
           audio.currentTime = 0;
-          document.getElementById("?!?!_effect").play();
+          document.getElementById("surprised_effect").play();
         }
       </script>
       <!-- Global site tag (gtag.js) - Google Analytics -->
