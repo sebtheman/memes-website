@@ -21,6 +21,7 @@
       <audio id="man_crying" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/man_crying.mp3"></audio>
       <audio id="i_feel_good" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/i_feel_good.mp3"></audio>
       <audio id="roast_oh" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/roast_oh.mp3"></audio>
+      <audio id="another_one" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/another_one.mp3"></audio>
       <script>
         function stopAll() {
             var audio = document.getElementById("russian_song");
@@ -83,6 +84,9 @@
             var audio = document.getElementById("roast_oh");
             audio.currentTime = 0;
             document.getElementById("roast_oh").pause();
+            var audio = document.getElementById("another_one");
+            audio.currentTime = 0;
+            document.getElementById("another_one").pause();
 
         }
         function play_russian_music(){
@@ -204,6 +208,12 @@
           var audio = document.getElementById("i_feel_good");
           audio.currentTime = 0;
           document.getElementById("i_feel_good").play();
+        }
+        function play_another_one_effect(){
+          stopAll();
+          var audio = document.getElementById("another_one");
+          audio.currentTime = 0;
+          document.getElementById("another_one").play();
         }
       </script>
       <!-- Global site tag (gtag.js) - Google Analytics -->
