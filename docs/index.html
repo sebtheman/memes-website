@@ -12,6 +12,7 @@
       <audio id="tiny_tuba" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/tuba.mp3"></audio>
       <audio id="no_god_please_no" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/no_god_please_no.mp3"></audio>
       <audio id="oh_my_god_wow" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/oh_my_god_wow.mp3"></audio>
+      <audio id="wat" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/wat.mp3"></audio>
       <script>
         function stopAll() {
             var audio = document.getElementById("russian_song");
@@ -47,6 +48,9 @@
             var audio = document.getElementById("oh_my_god_wow");
             audio.currentTime = 0;
             document.getElementById("oh_my_god_wow").pause();
+            var audio = document.getElementById("wat");
+            audio.currentTime = 0;
+            document.getElementById("wat").pause();
 
         }
         function play_russian_music(){
@@ -114,6 +118,12 @@
           var audio = document.getElementById("oh_my_god_wow");
           audio.currentTime = 0;
           document.getElementById("oh_my_god_wow").play();
+        }
+        function play_wat_sound_effect(){
+          stopAll();
+          var audio = document.getElementById("wat");
+          audio.currentTime = 0;
+          document.getElementById("wat").play();
         }
       </script>
       <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -220,6 +230,7 @@
         </a>
         <button id="meme_button" onclick="play_no_god_please_no_sound_effect();">No God Please No</button>
         <button id="meme_button" onclick="play_oh_my_god_wow_sound_effect();">Oh My God Wow</button>
+        <button id="meme_button" onclick="play_wat_sound_effect();">Wat</button>
         <script>
             includeHTML();
         </script>
