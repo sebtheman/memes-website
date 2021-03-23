@@ -10,6 +10,7 @@
       <audio id="surprised_effect" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/surprised_effect.mp3"></audio>
       <audio id="coffin_dance" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/coffin_dance.mp3"></audio>
       <audio id="tiny_tuba" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/tuba.mp3"></audio>
+      <audio id="no_god_please_no" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/no_god_please_no.mp3"></audio>
       <script>
         function stopAll() {
             var audio = document.getElementById("russian_song");
@@ -39,6 +40,9 @@
             var audio = document.getElementById("tiny_tuba");
             audio.currentTime = 0;
             document.getElementById("tiny_tuba").pause();
+            var audio = document.getElementById("no_god_please_no");
+            audio.currentTime = 0;
+            document.getElementById("no_god_please_no").pause();
 
         }
         function play_russian_music(){
@@ -94,6 +98,12 @@
           var audio = document.getElementById("tiny_tuba");
           audio.currentTime = 0;
           document.getElementById("tiny_tuba").play();
+        }
+        function play_no_god_please_no_sound_effect(){
+            stopAll();
+          var audio = document.getElementById("no_god_please_no");
+          audio.currentTime = 0;
+          document.getElementById("no_god_please_no").play();
         }
       </script>
       <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -198,6 +208,7 @@
         <a onclick="play_tuba_sound_effect();">
           <img src="images/tuba.jpeg" style="cursor: pointer;">
         </a>
+        <button id="meme_button" onclick="play_no_god_please_no_sound_effect();">No God Please No</button>
         <script>
             includeHTML();
         </script>
