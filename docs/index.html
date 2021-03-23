@@ -8,6 +8,7 @@
       <audio id="wow_sound_effect" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/wow_sound_effect.mp3"></audio>
       <audio id="nani_effect" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/nani.mp3"></audio>
       <audio id="surprised_effect" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/surprised_effect.mp3"></audio>
+      <audio id="coffin_dance" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/coffin_dance.mp3"></audio>
       <script>
         function stopAll() {
             var audio = document.getElementById("russian_song");
@@ -31,6 +32,9 @@
             var audio = document.getElementById("surprised_effect");
             audio.currentTime = 0;
             document.getElementById("surprised_effect").pause();
+            var audio = document.getElementById("coffin_dance");
+            audio.currentTime = 0;
+            document.getElementById("coffin_dance").pause();
 
         }
         function play_russian_music(){
@@ -74,6 +78,12 @@
           var audio = document.getElementById("surprised_effect");
           audio.currentTime = 0;
           document.getElementById("surprised_effect").play();
+        }
+        function play_coffin_dance(){
+            stopAll();
+          var audio = document.getElementById("coffin_dance");
+          audio.currentTime = 0;
+          document.getElementById("coffin_dance").play();
         }
       </script>
       <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -172,6 +182,7 @@
         <button id="meme_button" onclick="play_wow_sound_effect();">Wow</button>
         <button id="meme_button" onclick="play_nani_sound_effect();">Nani</button>
         <button id="meme_button" onclick="play_surprised_effect();">?!?!</button>
+        <button id="meme_button" onclick="play_coffin_dance();">Coffin Dance song</button>
         <script>
             includeHTML();
         </script>
