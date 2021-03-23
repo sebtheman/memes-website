@@ -176,6 +176,7 @@
               color: black;
               background-color: white;
               border-color: aqua;
+              cursor: pointer;
             }
         </style>
     </header>
@@ -195,7 +196,9 @@
         <button id="meme_button" onclick="play_nani_sound_effect();">Nani</button>
         <button id="meme_button" onclick="play_surprised_effect();">?!?!</button>
         <button id="meme_button" onclick="play_coffin_dance();">Coffin Dance song</button>
-        <img id="tuba" src="images/tuba.jpeg">
+        <a onclick="document.getElementById('tiny_tuba').play();">
+          <img src="images/tuba.jpeg" style="cursor: pointer;">
+        </a>
         <script>
             includeHTML();
         </script>
