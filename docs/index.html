@@ -20,6 +20,7 @@
       <audio id="damn" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/damn.mp3"></audio>
       <audio id="man_crying" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/man_crying.mp3"></audio>
       <audio id="i_feel_good" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/i_feel_good.mp3"></audio>
+      <audio id="roast_oh" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/roast_oh.mp3"></audio>
       <script>
         function stopAll() {
             var audio = document.getElementById("russian_song");
@@ -79,6 +80,9 @@
             var audio = document.getElementById("i_feel_good");
             audio.currentTime = 0;
             document.getElementById("i_feel_good").pause();
+            var audio = document.getElementById("roast_oh");
+            audio.currentTime = 0;
+            document.getElementById("roast_oh").pause();
 
         }
         function play_russian_music(){
@@ -190,6 +194,12 @@
           document.getElementById("man_crying").play();
         }
         function play_i_feel_good_effect(){
+          stopAll();
+          var audio = document.getElementById("i_feel_good");
+          audio.currentTime = 0;
+          document.getElementById("i_feel_good").play();
+        }
+        function play_roast_oh_effect(){
           stopAll();
           var audio = document.getElementById("i_feel_good");
           audio.currentTime = 0;
@@ -308,6 +318,7 @@
         <button id="meme_button" onclick="play_damn_effect();">Damn</button>
         <button id="meme_button" onclick="play_man_crying_effect();">Man Crying</button>
         <button id="meme_button" onclick="play_i_feel_good_effect();">I feel good</button>
+        <button id="meme_button" onclick="play_roast_oh_effect();">Ohhhh</button>
         <script>
             includeHTML();
         </script>
