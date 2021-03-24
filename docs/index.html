@@ -40,6 +40,7 @@
       <audio id="calm_down_jamal" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/calm_down_jamal.mp3"></audio>
       <audio id="smoke_weed_everyday" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/smoke_weed_everyday.mp3"></audio>
       <audio id="chug_jug_with_you" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/chug_jug_with_you.mp3"></audio>
+      <audio id="earrape_chug_jug_with_you" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/earrape_chug_jug_with_you.mp3"></audio>
       <script>
         function stopAll() {
             var audio = document.getElementById("russian_song");
@@ -159,6 +160,9 @@
             var audio = document.getElementById("chug_jug_with_you");
             audio.currentTime = 0;
             document.getElementById("chug_jug_with_you").pause();
+            var audio = document.getElementById("earrape_chug_jug_with_you");
+            audio.currentTime = 0;
+            document.getElementById("earrape_chug_jug_with_you").pause();
         }
         function play_russian_music(){
             stopAll();
@@ -394,6 +398,12 @@
           audio.currentTime = 0;
           document.getElementById("chug_jug_with_you").play();
         }
+        function play_earrape_chug_jug_with_you_effect(){
+          stopAll();
+          var audio = document.getElementById("earrape_chug_jug_with_you");
+          audio.currentTime = 0;
+          document.getElementById("earrape_chug_jug_with_you").play();
+        }
       </script>
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-LWM9BCD474"></script>
@@ -527,6 +537,7 @@
         <button id="meme_button" onclick="play_calm_down_jamal_effect();">Calm down Jamal</button>
         <button id="meme_button" onclick="play_smoke_weed_everyday_effect();">Smoke weed everyday</button>
         <button id="meme_button" onclick="play_chug_jug_with_you_effect();">Chug jug with you</button>
+        <button id="meme_button" onclick="play_earrape_chug_jug_with_you_effect();">Earrape chug jug with you</button>
         <script>
             includeHTML();
         </script>
