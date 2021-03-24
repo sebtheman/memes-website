@@ -30,6 +30,7 @@
       <audio id="silent_laugh" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/silent_laugh.mp3"></audio>
       <audio id="monkeys_laughing" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/monkeys_laughing.mp3"></audio>
       <audio id="epic_saxophone" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/epic_saxophone.mp3"></audio>
+      <audio id="i_am_confusion" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/i_am_confusion.mp3"></audio>
       <script>
         function stopAll() {
             var audio = document.getElementById("russian_song");
@@ -119,6 +120,9 @@
             var audio = document.getElementById("epic_saxophone");
             audio.currentTime = 0;
             document.getElementById("epic_saxophone").pause();
+            var audio = document.getElementById("i_am_confusion");
+            audio.currentTime = 0;
+            document.getElementById("i_am_confusion").pause();
 
         }
         function play_russian_music(){
@@ -295,6 +299,12 @@
           audio.currentTime = 0;
           document.getElementById("epic_saxophone").play();
         }
+        function play_i_am_confusion_effect(){
+          stopAll();
+          var audio = document.getElementById("i_am_confusion");
+          audio.currentTime = 0;
+          document.getElementById("i_am_confusion").play();
+        }
       </script>
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-LWM9BCD474"></script>
@@ -418,6 +428,7 @@
         <button id="meme_button" onclick="play_silent_laugh_effect();">Silent Laugh</button>
         <button id="meme_button" onclick="play_monkeys_laughing_effect();">Monkeys Laughing</button>
         <button id="meme_button" onclick="play_epic_saxophone_effect();">Epic Saxophone</button>
+        <button id="meme_button" onclick="play_i_am_confusion_effect();">I am confusion</button>
         <script>
             includeHTML();
         </script>
