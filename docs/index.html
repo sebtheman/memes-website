@@ -25,6 +25,7 @@
       <audio id="applause" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/applause.mp3"></audio>
       <audio id="beaver_screaming" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/beaver_screaming.mp3"></audio>
       <audio id="goat_screaming" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/goat_screaming.mp3"></audio>
+      <audio id="jonas_laughing" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/jonas_laughing.mp3"></audio>
       <script>
         function stopAll() {
             var audio = document.getElementById("russian_song");
@@ -99,6 +100,9 @@
             var audio = document.getElementById("goat_screaming");
             audio.currentTime = 0;
             document.getElementById("goat_screaming").pause();
+            var audio = document.getElementById("jonas_laughing");
+            audio.currentTime = 0;
+            document.getElementById("jonas_laughing").pause();
 
         }
         function play_russian_music(){
@@ -245,6 +249,12 @@
           audio.currentTime = 0;
           document.getElementById("goat_screaming").play();
         }
+        function play_jonas_laughing_effect(){
+          stopAll();
+          var audio = document.getElementById("jonas_laughing");
+          audio.currentTime = 0;
+          document.getElementById("jonas_laughing").play();
+        }
       </script>
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-LWM9BCD474"></script>
@@ -363,6 +373,7 @@
         <button id="meme_button" onclick="play_applause_effect();">Applause</button>
         <button id="meme_button" onclick="play_beaver_screaming_effect();">Beaver Screaming</button>
         <button id="meme_button" onclick="play_goat_screaming_effect();">Goat Screaming</button>
+        <button id="meme_button" onclick="play_jonas_laughing_effect();">Jonas Laughing</button>
         <script>
             includeHTML();
         </script>
