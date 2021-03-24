@@ -34,6 +34,7 @@
       <audio id="wii_theme_song" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/wii_theme_song.mp3"></audio>
       <audio id="wii_sports_theme_song" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/wii_sports_theme_song.mp3"></audio>
       <audio id="rick_roll" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/rick_roll.mp3"></audio>
+      <audio id="you_played_yourself" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/you_played_yourself.mp3"></audio>
       <script>
         function stopAll() {
             var audio = document.getElementById("russian_song");
@@ -135,6 +136,9 @@
             var audio = document.getElementById("rick_roll");
             audio.currentTime = 0;
             document.getElementById("rick_roll").pause();
+            var audio = document.getElementById("you_played_yourself");
+            audio.currentTime = 0;
+            document.getElementById("you_played_yourself").pause();
 
         }
         function play_russian_music(){
@@ -335,6 +339,12 @@
           audio.currentTime = 0;
           document.getElementById("rick_roll").play();
         }
+        function play_you_played_yourself_effect(){
+          stopAll();
+          var audio = document.getElementById("you_played_yourself");
+          audio.currentTime = 0;
+          document.getElementById("you_played_yourself").play();
+        }
       </script>
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-LWM9BCD474"></script>
@@ -462,6 +472,7 @@
         <button id="meme_button" onclick="play_wii_theme_song_effect();">Wii theme song</button>
         <button id="meme_button" onclick="play_wii_sports_theme_song_effect();">Wii sports theme song</button>
         <button id="meme_button" onclick="play_rick_roll_effect();">Rick Roll</button>
+        <button id="meme_button" onclick="play_you_played_yourself_effect();">You played yourself</button>
         <script>
             includeHTML();
         </script>
