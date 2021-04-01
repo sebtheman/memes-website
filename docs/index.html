@@ -50,6 +50,7 @@
       <audio id="his_name_is_john_cena" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/his_name_is_john_cena.mp3"></audio>
       <audio id="every_24_hours_a_day_passes" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/every_24_hours_a_day_passes.mp3"></audio>
       <audio id="titanic_fail_flute" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/titanic_fail_flute.mp3"></audio>
+      <audio id="ha_gay" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/ha_gay.mp3"></audio>
       <script>
         function stopAll() {
             var audio = document.getElementById("russian_song");
@@ -199,6 +200,9 @@
             var audio = document.getElementById("titanic_fail_flute");
             audio.currentTime = 0;
             document.getElementById("titanic_fail_flute").pause();
+            var audio = document.getElementById("ha_gay");
+            audio.currentTime = 0;
+            document.getElementById("ha_gay").pause();
         }
         function play_russian_music(){
             stopAll();
@@ -494,6 +498,12 @@
           audio.currentTime = 0;
           document.getElementById("titanic_fail_flute").play();
         }
+        function play_ha_gay_effect(){
+          stopAll();
+          var audio = document.getElementById("ha_gay");
+          audio.currentTime = 0;
+          document.getElementById("ha_gay").play();
+        }
       </script>
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-LWM9BCD474"></script>
@@ -640,6 +650,7 @@
         <button id="meme_button" onclick="play_his_name_is_john_cena_effect();">His name is John Cena</button>
         <button id="meme_button" onclick="play_every_24_hours_a_day_passes_effect();">Every 24 hours a day passes</button>
         <button id="meme_button" onclick="play_titanic_fail_flute_effect();">Titanic Fail Flute</button>
+        <button id="meme_button" onclick="play_ha_gay_effect();">Ha Gay</button>
         <script>
             includeHTML();
         </script>
