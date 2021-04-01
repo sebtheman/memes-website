@@ -53,6 +53,7 @@
       <audio id="ha_gay" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/ha_gay.mp3"></audio>
       <audio id="my_name_is_frances_remix" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/my_name_is_frances_remix.mp3"></audio>
       <audio id="my_name_is_frances_original" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/my_name_is_frances_original.mp3"></audio>
+      <audio id="directed_by_robert" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/directed_by_robert.mp3"></audio>
       <script>
         function stopAll() {
             var audio = document.getElementById("russian_song");
@@ -211,6 +212,9 @@
             var audio = document.getElementById("my_name_is_frances_original");
             audio.currentTime = 0;
             document.getElementById("my_name_is_frances_original").pause();
+            var audio = document.getElementById("directed_by_robert");
+            audio.currentTime = 0;
+            document.getElementById("directed_by_robert").pause();
         }
         function play_russian_music(){
             stopAll();
@@ -524,6 +528,12 @@
           audio.currentTime = 0;
           document.getElementById("my_name_is_frances_original").play();
         }
+        function play_directed_by_robert_effect(){
+          stopAll();
+          var audio = document.getElementById("directed_by_robert");
+          audio.currentTime = 0;
+          document.getElementById("directed_by_robert").play();
+        }
       </script>
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-LWM9BCD474"></script>
@@ -673,6 +683,7 @@
         <button id="meme_button" onclick="play_ha_gay_effect();">Ha Gay</button>
         <button id="meme_button" onclick="play_my_name_is_frances_remix_effect();">My name is Frances remix</button>
         <button id="meme_button" onclick="play_my_name_is_frances_orignal_effect();">My name is Frances original</button>
+        <button id="meme_button" onclick="play_directed_by_robert_effect();">Directed by Robert</button>
         <script>
             includeHTML();
         </script>
