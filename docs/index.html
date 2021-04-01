@@ -54,6 +54,7 @@
       <audio id="my_name_is_frances_remix" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/my_name_is_frances_remix.mp3"></audio>
       <audio id="my_name_is_frances_original" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/my_name_is_frances_original.mp3"></audio>
       <audio id="directed_by_robert" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/directed_by_robert.mp3"></audio>
+      <audio id="tom_da_tank_bass" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/tom_da_tank_bass.mp3"></audio>
       <script>
         function stopAll() {
             var audio = document.getElementById("russian_song");
@@ -215,6 +216,9 @@
             var audio = document.getElementById("directed_by_robert");
             audio.currentTime = 0;
             document.getElementById("directed_by_robert").pause();
+            var audio = document.getElementById("tom_da_tank_bass");
+            audio.currentTime = 0;
+            document.getElementById("tom_da_tank_bass").pause();
         }
         function play_russian_music(){
             stopAll();
@@ -534,6 +538,12 @@
           audio.currentTime = 0;
           document.getElementById("directed_by_robert").play();
         }
+        function play_tom_da_tank_bass_effect(){
+          stopAll();
+          var audio = document.getElementById("tom_da_tank_bass");
+          audio.currentTime = 0;
+          document.getElementById("tom_da_tank_bass").play();
+        }
       </script>
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-LWM9BCD474"></script>
@@ -684,6 +694,7 @@
         <button id="meme_button" onclick="play_my_name_is_frances_remix_effect();">My name is Frances remix</button>
         <button id="meme_button" onclick="play_my_name_is_frances_original_effect();">My name is Frances original</button>
         <button id="meme_button" onclick="play_directed_by_robert_effect();">Directed by Robert</button>
+        <button id="meme_button" onclick="play_tom_da_tank_bass_effect();">Tom da tank bass</button>
         <script>
             includeHTML();
         </script>
