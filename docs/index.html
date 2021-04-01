@@ -47,6 +47,7 @@
       <audio id="bruh_chill" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/bruh_chill.mp3"></audio>
       <audio id="the_lion_sleeps_tonight" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/the_lion_sleeps_tonight.mp3"></audio>
       <audio id="windows_xp_startup" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/windows_xp_startup.mp3"></audio>
+      <audio id="his_name_is_john_cena" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/his_name_is_john_cena.mp3"></audio>
       <script>
         function stopAll() {
             var audio = document.getElementById("russian_song");
@@ -187,6 +188,9 @@
             var audio = document.getElementById("windows_xp_startup");
             audio.currentTime = 0;
             document.getElementById("windows_xp_startup").pause();
+            var audio = document.getElementById("his_name_is_john_cena");
+            audio.currentTime = 0;
+            document.getElementById("his_name_is_john_cena").pause();
         }
         function play_russian_music(){
             stopAll();
@@ -464,6 +468,12 @@
           audio.currentTime = 0;
           document.getElementById("windows_xp_startup").play();
         }
+        function play_his_name_is_john_cena_effect(){
+          stopAll();
+          var audio = document.getElementById("his_name_is_john_cena");
+          audio.currentTime = 0;
+          document.getElementById("his_name_is_john_cena").play();
+        }
       </script>
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-LWM9BCD474"></script>
@@ -607,6 +617,7 @@
         <button id="meme_button" onclick="play_bruh_chill_effect();">Bruh Chill</button>
         <button id="meme_button" onclick="play_the_lion_sleeps_tonight_effect();">The lion sleeps tonight</button>
         <button id="meme_button" onclick="play_windows_xp_startup_effect();">Windows XP startup</button>
+        <button id="meme_button" onclick="play_his_name_is_john_cena_effect();">His name is John Cena</button>
         <script>
             includeHTML();
         </script>
