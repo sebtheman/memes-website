@@ -44,6 +44,7 @@
       <audio id="mii_channel_remix" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/mii_channel_remix.mp3"></audio>
       <audio id="snoop_dogg_meme" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/snoop_dogg_meme.mp3"></audio>
       <audio id="every_60_seconds_in_africa_a_minute_passes" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/every_60_seconds_in_africa_a_minute_passes.mp3"></audio>
+      <audio id="bruh_chill" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/bruh_chill.mp3"></audio>
       <script>
         function stopAll() {
             var audio = document.getElementById("russian_song");
@@ -175,6 +176,9 @@
             var audio = document.getElementById("every_60_seconds_in_africa_a_minute_passes");
             audio.currentTime = 0;
             document.getElementById("every_60_seconds_in_africa_a_minute_passes").pause();
+            var audio = document.getElementById("bruh_chill");
+            audio.currentTime = 0;
+            document.getElementById("bruh_chill").pause();
         }
         function play_russian_music(){
             stopAll();
@@ -434,6 +438,12 @@
           audio.currentTime = 0;
           document.getElementById("every_60_seconds_in_africa_a_minute_passes").play();
         }
+        function play_bruh_chill_effect(){
+          stopAll();
+          var audio = document.getElementById("bruh_chill");
+          audio.currentTime = 0;
+          document.getElementById("bruh_chill").play();
+        }
       </script>
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-LWM9BCD474"></script>
@@ -574,6 +584,7 @@
         <button id="meme_button" onclick="play_mii_channel_remix_effect();">Mii channel remix</button>
         <button id="meme_button" onclick="play_snoop_dogg_meme_effect();">Snoop dogg</button>
         <button id="meme_button" onclick="play_every_60_seconds_in_africa_a_minute_passes_effect();">Minute passes every 60 secs in Africa</button>
+        <button id="meme_button" onclick="play_bruh_chill_effect();">Bruh Chill</button>
         <script>
             includeHTML();
         </script>
