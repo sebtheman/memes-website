@@ -46,6 +46,7 @@
       <audio id="every_60_seconds_in_africa_a_minute_passes" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/every_60_seconds_in_africa_a_minute_passes.mp3"></audio>
       <audio id="bruh_chill" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/bruh_chill.mp3"></audio>
       <audio id="the_lion_sleeps_tonight" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/the_lion_sleeps_tonight.mp3"></audio>
+      <audio id="windows_xp_startup" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/windows_xp_startup.mp3"></audio>
       <script>
         function stopAll() {
             var audio = document.getElementById("russian_song");
@@ -183,6 +184,9 @@
             var audio = document.getElementById("the_lion_sleeps_tonight");
             audio.currentTime = 0;
             document.getElementById("the_lion_sleeps_tonight").pause();
+            var audio = document.getElementById("windows_xp_startup");
+            audio.currentTime = 0;
+            document.getElementById("windows_xp_startup").pause();
         }
         function play_russian_music(){
             stopAll();
@@ -454,6 +458,12 @@
           audio.currentTime = 0;
           document.getElementById("the_lion_sleeps_tonight").play();
         }
+        function play_windows_xp_startup_effect(){
+          stopAll();
+          var audio = document.getElementById("windows_xp_startup");
+          audio.currentTime = 0;
+          document.getElementById("windows_xp_startup").play();
+        }
       </script>
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-LWM9BCD474"></script>
@@ -596,6 +606,7 @@
         <button id="meme_button" onclick="play_every_60_seconds_in_africa_a_minute_passes_effect();">Minute passes every 60 secs in Africa</button>
         <button id="meme_button" onclick="play_bruh_chill_effect();">Bruh Chill</button>
         <button id="meme_button" onclick="play_the_lion_sleeps_tonight_effect();">The lion sleeps tonight</button>
+        <button id="meme_button" onclick="play_windows_xp_startup_effect();">Windows XP startup</button>
         <script>
             includeHTML();
         </script>
