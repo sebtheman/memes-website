@@ -60,6 +60,7 @@
       <audio id="they_ask_you_how_you_are" src="https://github.com/sebtheman/memes-website/raw/master/docs/audio/they_ask_you_how_you_are.mp3"></audio>
       <script>
         function stopAll() {
+          document.getElementById("memePlayingSpan").textContent="No meme is playing right now";
             var audio = document.getElementById("russian_song");
             audio.currentTime = 0;
             document.getElementById("russian_song").pause();
@@ -230,340 +231,397 @@
             document.getElementById("they_ask_you_how_you_are").pause();
         }
         function play_russian_music(){
-            stopAll();
-            var audio = document.getElementById("russian_song");
-            audio.currentTime = 0;
-            document.getElementById("russian_song").play();
+          stopAll();
+          var audio = document.getElementById("russian_song");
+          audio.currentTime = 0;
+          document.getElementById("russian_song").play();
+          document.getElementById("memePlayingSpan").textContent="The Russian Music meme is playing right now";
         }
         function play_bruh_sound_effect(){
           stopAll();
           var audio = document.getElementById("bruh_sound_effect");
           audio.currentTime = 0;
           document.getElementById("bruh_sound_effect").play();
+          document.getElementById("memePlayingSpan").textContent="The Bruh meme is playing right now";
         }
         function play_sad_violin(){
           stopAll();
           var audio = document.getElementById("sad_violin");
           audio.currentTime = 0;
           document.getElementById("sad_violin").play();
+          document.getElementById("memePlayingSpan").textContent="The Sad Violin meme is playing right now";
         }
         function play_still_dre(){
           stopAll();
           var audio = document.getElementById("still_dre");
           audio.currentTime = 0;
           document.getElementById("still_dre").play();
+          document.getElementById("memePlayingSpan").textContent="The Still Dre meme is playing right now";
+          
         }
         function play_wow_sound_effect(){
           stopAll();
           var audio = document.getElementById("wow_sound_effect");
           audio.currentTime = 0;
           document.getElementById("wow_sound_effect").play();
+          document.getElementById("memePlayingSpan").textContent="The Wow meme is playing right now";
         }
         function play_nani_sound_effect(){
           stopAll();
           var audio = document.getElementById("nani_effect");
           audio.currentTime = 0;
           document.getElementById("nani_effect").play();
+          document.getElementById("memePlayingSpan").textContent="The Nani meme is playing right now";
         }
         function play_surprised_effect(){
           stopAll();
           var audio = document.getElementById("surprised_effect");
           audio.currentTime = 0;
           document.getElementById("surprised_effect").play();
+          document.getElementById("memePlayingSpan").textContent="The surprised sound effect meme is playing right now";
         }
         function play_coffin_dance(){
           stopAll();
           var audio = document.getElementById("coffin_dance");
           audio.currentTime = 0;
           document.getElementById("coffin_dance").play();
+          document.getElementById("memePlayingSpan").textContent="The Coffin Dance meme is playing right now";
         }
         function play_tuba_sound_effect(){
           stopAll();
           var audio = document.getElementById("tiny_tuba");
           audio.currentTime = 0;
           document.getElementById("tiny_tuba").play();
+          document.getElementById("memePlayingSpan").textContent="The Tiny Tuba meme is playing right now";
         }
         function play_no_god_please_no_sound_effect(){
           stopAll();
           var audio = document.getElementById("no_god_please_no");
           audio.currentTime = 0;
           document.getElementById("no_god_please_no").play();
+          document.getElementById("memePlayingSpan").textContent="The No God Please No meme is playing right now";
         }
         function play_oh_my_god_wow_sound_effect(){
           stopAll();
           var audio = document.getElementById("oh_my_god_wow");
           audio.currentTime = 0;
           document.getElementById("oh_my_god_wow").play();
+          document.getElementById("memePlayingSpan").textContent="The Oh My God Wow meme is playing right now";
         }
         function play_wat_sound_effect(){
           stopAll();
           var audio = document.getElementById("wat");
           audio.currentTime = 0;
           document.getElementById("wat").play();
+          document.getElementById("memePlayingSpan").textContent="The Wat meme is playing right now";
         }
         function play_wait_a_minute_sound_effect(){
           stopAll();
           var audio = document.getElementById("wait_a_minute");
           audio.currentTime = 0;
           document.getElementById("wait_a_minute").play();
+          document.getElementById("memePlayingSpan").textContent="The Wait A Minute meme is playing right now";
         }
         function play_just_do_it_effect(){
           stopAll();
           var audio = document.getElementById("just_do_it");
           audio.currentTime = 0;
           document.getElementById("just_do_it").play();
+          document.getElementById("memePlayingSpan").textContent="The Just Do It meme is playing right now";
         }
         function play_old_man_funny_laugh_effect(){
           stopAll();
           var audio = document.getElementById("old_man_funny_laugh");
           audio.currentTime = 0;
           document.getElementById("old_man_funny_laugh").play();
+          document.getElementById("memePlayingSpan").textContent="The Old Man Laugh meme is playing right now";
         }
         function play_tv_bleep_effect(){
           stopAll();
           var audio = document.getElementById("tv_bleep");
           audio.currentTime = 0;
           document.getElementById("tv_bleep").play();
+          document.getElementById("memePlayingSpan").textContent="The TV Bleep meme is playing right now";
         }
         function play_damn_effect(){
           stopAll();
           var audio = document.getElementById("damn");
           audio.currentTime = 0;
           document.getElementById("damn").play();
+          document.getElementById("memePlayingSpan").textContent="The Damn meme is playing right now";
         }
         function play_man_crying_effect(){
           stopAll();
           var audio = document.getElementById("man_crying");
           audio.currentTime = 0;
           document.getElementById("man_crying").play();
+          document.getElementById("memePlayingSpan").textContent="The Man Crying meme is playing right now";
         }
         function play_i_feel_good_effect(){
           stopAll();
           var audio = document.getElementById("i_feel_good");
           audio.currentTime = 0;
           document.getElementById("i_feel_good").play();
+          document.getElementById("memePlayingSpan").textContent="The I Feel Good meme is playing right now";
         }
         function play_roast_oh_effect(){
           stopAll();
           var audio = document.getElementById("roast_oh");
           audio.currentTime = 0;
           document.getElementById("roast_oh").play();
+          document.getElementById("memePlayingSpan").textContent="The OHHHHHH roast meme is playing right now";
         }
         function play_another_one_effect(){
           stopAll();
           var audio = document.getElementById("another_one");
           audio.currentTime = 0;
           document.getElementById("another_one").play();
+          document.getElementById("memePlayingSpan").textContent="The Another One meme is playing right now";
         }
         function play_applause_effect(){
           stopAll();
           var audio = document.getElementById("applause");
           audio.currentTime = 0;
           document.getElementById("applause").play();
+          document.getElementById("memePlayingSpan").textContent="The Applause meme is playing right now";
         }
         function play_beaver_screaming_effect(){
           stopAll();
           var audio = document.getElementById("beaver_screaming");
           audio.currentTime = 0;
           document.getElementById("beaver_screaming").play();
+          document.getElementById("memePlayingSpan").textContent="The Beaver Screaming meme is playing right now";
         }
         function play_goat_screaming_effect(){
           stopAll();
           var audio = document.getElementById("goat_screaming");
           audio.currentTime = 0;
           document.getElementById("goat_screaming").play();
+          document.getElementById("memePlayingSpan").textContent="The Goat Screaming meme is playing right now";
         }
         function play_jonas_laughing_effect(){
           stopAll();
           var audio = document.getElementById("jonas_laughing");
           audio.currentTime = 0;
           document.getElementById("jonas_laughing").play();
+          document.getElementById("memePlayingSpan").textContent="The Jonas Laughing meme is playing right now";
         }
         function play_lion_laughing_effect(){
           stopAll();
           var audio = document.getElementById("lion_laughing");
           audio.currentTime = 0;
           document.getElementById("lion_laughing").play();
+          document.getElementById("memePlayingSpan").textContent="The Lion Laughing meme is playing right now";
         }
         function play_silent_laugh_effect(){
           stopAll();
           var audio = document.getElementById("silent_laugh");
           audio.currentTime = 0;
           document.getElementById("silent_laugh").play();
+          document.getElementById("memePlayingSpan").textContent="The Silent Laugh meme is playing right now";
         }
         function play_monkeys_laughing_effect(){
           stopAll();
           var audio = document.getElementById("monkeys_laughing");
           audio.currentTime = 0;
           document.getElementById("monkeys_laughing").play();
+          document.getElementById("memePlayingSpan").textContent="The Monkeys Laughing meme is playing right now";
         }
         function play_epic_saxophone_effect(){
           stopAll();
           var audio = document.getElementById("epic_saxophone");
           audio.currentTime = 0;
           document.getElementById("epic_saxophone").play();
+          document.getElementById("memePlayingSpan").textContent="The Epic Saxophone meme is playing right now";
         }
         function play_i_am_confusion_effect(){
           stopAll();
           var audio = document.getElementById("i_am_confusion");
           audio.currentTime = 0;
           document.getElementById("i_am_confusion").play();
+          document.getElementById("memePlayingSpan").textContent="The I Am Confusion meme is playing right now";
         }
         function play_wii_theme_song_effect(){
           stopAll();
           var audio = document.getElementById("wii_theme_song");
           audio.currentTime = 0;
           document.getElementById("wii_theme_song").play();
+          document.getElementById("memePlayingSpan").textContent="The Wii Theme Song meme is playing right now";
         }
         function play_wii_sports_theme_song_effect(){
           stopAll();
           var audio = document.getElementById("wii_sports_theme_song");
           audio.currentTime = 0;
           document.getElementById("wii_sports_theme_song").play();
+          document.getElementById("memePlayingSpan").textContent="The Wii Sports Theme Song meme is playing right now";
         }
         function play_rick_roll_effect(){
           stopAll();
           var audio = document.getElementById("rick_roll");
           audio.currentTime = 0;
           document.getElementById("rick_roll").play();
+          document.getElementById("memePlayingSpan").textContent="The Rick Roll meme is playing right now";
         }
         function play_you_played_yourself_effect(){
           stopAll();
           var audio = document.getElementById("you_played_yourself");
           audio.currentTime = 0;
           document.getElementById("you_played_yourself").play();
+          document.getElementById("memePlayingSpan").textContent="The You Played Yourself meme is playing right now";
         }
         function play_sike_thats_the_wrong_number_effect(){
           stopAll();
           var audio = document.getElementById("sike_thats_the_wrong_number");
           audio.currentTime = 0;
           document.getElementById("sike_thats_the_wrong_number").play();
+          document.getElementById("memePlayingSpan").textContent="The Sike That's The Wrong Number meme is playing right now";
         }
         function play_thomas_the_dank_engine_effect(){
           stopAll();
           var audio = document.getElementById("thomas_the_dank_engine");
           audio.currentTime = 0;
           document.getElementById("thomas_the_dank_engine").play();
+          document.getElementById("memePlayingSpan").textContent="The Thomas The Dank Engine meme is playing right now";
         }
         function play_calm_down_jamal_effect(){
           stopAll();
           var audio = document.getElementById("calm_down_jamal");
           audio.currentTime = 0;
           document.getElementById("calm_down_jamal").play();
+          document.getElementById("memePlayingSpan").textContent="The Calm Down Jamal meme is playing right now";
         }
         function play_smoke_weed_everyday_effect(){
           stopAll();
           var audio = document.getElementById("smoke_weed_everyday");
           audio.currentTime = 0;
           document.getElementById("smoke_weed_everyday").play();
+          document.getElementById("memePlayingSpan").textContent="The Smoke Weed Everyday meme is playing right now";
         }
         function play_chug_jug_with_you_effect(){
           stopAll();
           var audio = document.getElementById("chug_jug_with_you");
           audio.currentTime = 0;
           document.getElementById("chug_jug_with_you").play();
+          document.getElementById("memePlayingSpan").textContent="The Chug Jug With You meme is playing right now";
         }
         function play_earrape_chug_jug_with_you_effect(){
           stopAll();
           var audio = document.getElementById("earrape_chug_jug_with_you");
           audio.currentTime = 0;
           document.getElementById("earrape_chug_jug_with_you").play();
+          document.getElementById("memePlayingSpan").textContent="The Earrape Chug Jug With You meme is playing right now";
         }
         function play_mii_channel_remix_effect(){
           stopAll();
           var audio = document.getElementById("mii_channel_remix");
           audio.currentTime = 0;
           document.getElementById("mii_channel_remix").play();
+          document.getElementById("memePlayingSpan").textContent="The Mii Channel Remix meme is playing right now";
         }
         function play_snoop_dogg_meme_effect(){
           stopAll();
           var audio = document.getElementById("snoop_dogg_meme");
           audio.currentTime = 0;
           document.getElementById("snoop_dogg_meme").play();
+          document.getElementById("memePlayingSpan").textContent="The Snoop Dogg meme is playing right now";
         }
         function play_every_60_seconds_in_africa_a_minute_passes_effect(){
           stopAll();
           var audio = document.getElementById("every_60_seconds_in_africa_a_minute_passes");
           audio.currentTime = 0;
           document.getElementById("every_60_seconds_in_africa_a_minute_passes").play();
+          document.getElementById("memePlayingSpan").textContent="Every 60 seconds a minute passes in Africa is playing right now";
         }
         function play_bruh_chill_effect(){
           stopAll();
           var audio = document.getElementById("bruh_chill");
           audio.currentTime = 0;
           document.getElementById("bruh_chill").play();
+          document.getElementById("memePlayingSpan").textContent="The Bruh Chill meme is playing right now";
         }
         function play_the_lion_sleeps_tonight_effect(){
           stopAll();
           var audio = document.getElementById("the_lion_sleeps_tonight");
           audio.currentTime = 0;
           document.getElementById("the_lion_sleeps_tonight").play();
+          document.getElementById("memePlayingSpan").textContent="The Lion Sleeps Tonight meme is playing right now";
         }
         function play_windows_xp_startup_effect(){
           stopAll();
           var audio = document.getElementById("windows_xp_startup");
           audio.currentTime = 0;
           document.getElementById("windows_xp_startup").play();
+          document.getElementById("memePlayingSpan").textContent="The Windows XP Startup meme is playing right now";
         }
         function play_his_name_is_john_cena_effect(){
           stopAll();
           var audio = document.getElementById("his_name_is_john_cena");
           audio.currentTime = 0;
           document.getElementById("his_name_is_john_cena").play();
+          document.getElementById("memePlayingSpan").textContent="The His Name Is JOHN CENA meme is playing right now";
         }
         function play_every_24_hours_a_day_passes_effect(){
           stopAll();
           var audio = document.getElementById("every_24_hours_a_day_passes");
           audio.currentTime = 0;
           document.getElementById("every_24_hours_a_day_passes").play();
+          document.getElementById("memePlayingSpan").textContent="The Every 24 Hours A Day Passes meme is playing right now";
         }
         function play_titanic_fail_flute_effect(){
           stopAll();
           var audio = document.getElementById("titanic_fail_flute");
           audio.currentTime = 0;
           document.getElementById("titanic_fail_flute").play();
+          document.getElementById("memePlayingSpan").textContent="The Titanic Fail FLute meme is playing right now";
         }
         function play_ha_gay_effect(){
           stopAll();
           var audio = document.getElementById("ha_gay");
           audio.currentTime = 0;
           document.getElementById("ha_gay").play();
+          document.getElementById("memePlayingSpan").textContent="The Ha Gay meme is playing right now";
         }
         function play_my_name_is_frances_remix_effect(){
           stopAll();
           var audio = document.getElementById("my_name_is_frances_remix");
           audio.currentTime = 0;
           document.getElementById("my_name_is_frances_remix").play();
+          document.getElementById("memePlayingSpan").textContent="The My Name Is Frances Remix meme is playing right now";
         }
         function play_my_name_is_frances_original_effect(){
           stopAll();
           var audio = document.getElementById("my_name_is_frances_original");
           audio.currentTime = 0;
           document.getElementById("my_name_is_frances_original").play();
+          document.getElementById("memePlayingSpan").textContent="The My Name Is Frances meme is playing right now";
         }
         function play_directed_by_robert_effect(){
           stopAll();
           var audio = document.getElementById("directed_by_robert");
           audio.currentTime = 0;
           document.getElementById("directed_by_robert").play();
+          document.getElementById("memePlayingSpan").textContent="The Directed By Robert meme is playing right now";
         }
         function play_tom_da_tank_bass_effect(){
           stopAll();
           var audio = document.getElementById("tom_da_tank_bass");
           audio.currentTime = 0;
           document.getElementById("tom_da_tank_bass").play();
+          document.getElementById("memePlayingSpan").textContent="The Tom Da Tank meme is playing right now";
         }
         function play_we_got_em_earrape_effect(){
           stopAll();
           var audio = document.getElementById("we_got_em_earrape");
           audio.currentTime = 0;
           document.getElementById("we_got_em_earrape").play();
+          document.getElementById("memePlayingSpan").textContent="The We Got Em Earrape meme is playing right now";
         }
         function play_they_ask_you_how_you_are_effect(){
           stopAll();
           var audio = document.getElementById("they_ask_you_how_you_are");
           audio.currentTime = 0;
           document.getElementById("they_ask_you_how_you_are").play();
+          document.getElementById("memePlayingSpan").textContent="The They Ask You How You Are meme is playing right now";
         }
       </script>
       <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -617,6 +675,11 @@
               }
             }
         </script>
+        <script>
+          function changetext() {
+            document.getElementById("mySpan").textContent="CHANGED THE TEXT YAYAYYAYA";
+          }
+        </script>
     </head>
     <header>
         <title>Seb's Memes Soundboard</title>
@@ -650,6 +713,14 @@
               border-color: aqua;
               cursor: pointer;
             }
+            #memePlayingSpan {
+              background-image: url(https://github.com/sebtheman/mechatronics-transistor-assignment/raw/master/docs/rainbow_rectangle.gif);
+              border-style: solid;
+              border-color: black;
+              border-radius: 10px;
+              border-width: 3px;
+              background-size: 1000px auto;
+            }
         </style>
     </header>
     <body>
@@ -658,6 +729,7 @@
           <center><i>Welcome to the Memes Website!</i></center>
         </div>
         <img src="images/logo.png">
+        <center><h1><span id="memePlayingSpan">No meme is playing right now</span></h1></center>
         <center><button id="meme_button" onclick="stopAll();">Stop the memes</button></center>
         <br style="height: 10px;">
         <button id="meme_button" onclick="play_russian_music();">Russian Music</button>
