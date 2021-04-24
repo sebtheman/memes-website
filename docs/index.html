@@ -730,6 +730,13 @@
                 visibility: visible;
                 position: static;
             }
+            #logotext {
+              color: rgb(102, 255, 0);
+              background-color: black;
+              font-weight: bold;
+              text-align: center;
+              font-size: 26pt;
+            }
         </style>
         <script>
           function resizeWindowEffects() {
@@ -756,11 +763,15 @@
             //javascript for screens wider than or equal to 1085 here
             var x = document.getElementById("logoimage");
             x.className = "visible";
+            var x = document.getElementById("logotext");
+            x.className = "invisible";
             }
             else {
             //javascript for screens smaller than 1085 here
             var x = document.getElementById("logoimage");
             x.className = "invisible";
+            var x = document.getElementById("logotext");
+            x.className = "visible";
             }
           }
         </script>
@@ -770,8 +781,9 @@
         <div class="welcometohomepage">
           <center><i>Welcome to the Memes Website!</i></center>
         </div>
-        <img src="images/logo.png" id="logoimage" class="visible">
-        <center><h1><span id="memePlayingSpan">No meme is playing right now</span></h1></center>
+        <img src="images/logo.png" id="logoimage" class="invisible">
+        <h1><center><span id="logotext">Sebastian's Meme Soundboard</span></center></h1>
+        <center><h1><span id="memePlayingSpan" class="invisible">No meme is playing right now</span></h1></center>
         <center><button id="meme_button" onclick="stopAll();">Stop the memes</button></center>
         <br style="height: 10px;">
         <button id="meme_button" onclick="play_russian_music();">Russian Music</button>
