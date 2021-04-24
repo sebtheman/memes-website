@@ -721,14 +721,56 @@
               border-width: 3px;
               background-size: 1000px auto;
             }
+            .invisible {
+                visibility: hidden;
+                position: absolute;
+                top: -9999px;
+            }
+            .visible {
+                visibility: visible;
+                position: static;
+            }
         </style>
+        <script>
+          function resizeWindowEffects() {
+            var w=window;
+            var d=document;
+            var e=d.documentElement;
+            var g=d.getElementsByTagName('body')[0];
+            var windowWidth=w.innerWidth||e.clientWidth||g.clientWidth;
+            //Get rid of meme playing span if screen is smaller than 870px
+            var targetWidth = 870;
+            if ( windowWidth >= targetWidth) {     
+            //javascript for screens wider than or equal to 870 here
+            var x = document.getElementById("memePlayingSpan");
+            x.className = "visible";
+            }
+            else {
+            //javascript for screens smaller than 870 here
+            var x = document.getElementById("memePlayingSpan");
+            x.className = "invisible";
+            }
+            //Get rid of logo if screen is smaller than 1085px
+            var targetWidth = 1085;
+            if ( windowWidth >= targetWidth) {     
+            //javascript for screens wider than or equal to 1085 here
+            var x = document.getElementById("logoimage");
+            x.className = "visible";
+            }
+            else {
+            //javascript for screens smaller than 1085 here
+            var x = document.getElementById("logoimage");
+            x.className = "invisible";
+            }
+          }
+        </script>
     </header>
-    <body>
+    <body onresize="resizeWindowEffects()" onload="resizeWindowEffects()">
         <div w3-include-html="https://sebtheman.github.io/responsivetopnavbar.html"></div>
         <div class="welcometohomepage">
           <center><i>Welcome to the Memes Website!</i></center>
         </div>
-        <img src="images/logo.png">
+        <img src="images/logo.png" id="logoimage" class="visible">
         <center><h1><span id="memePlayingSpan">No meme is playing right now</span></h1></center>
         <center><button id="meme_button" onclick="stopAll();">Stop the memes</button></center>
         <br style="height: 10px;">
